@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TarjetaGt" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b0f1bbc7-84ca-46d5-bbfa-1f673b6a0869">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="261"/>
+	<property name="ireport.y" value="337"/>
+	<parameter name="id1" class="java.lang.String"/>
+	<field name="nombre1" class="java.lang.String"/>
+	<field name="apellido1" class="java.lang.String"/>
+	<field name="rufo2" class="java.lang.String"/>
+	<field name="fechac" class="java.lang.String"/>
+	<field name="fechae" class="java.lang.String"/>
+	<field name="rufo3" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="145" splitType="Stretch">
+			<image scaleImage="RetainShape">
+				<reportElement x="41" y="0" width="247" height="145" uuid="9dfd1245-6bbf-4fd8-8054-b2c937923f5a"/>
+				<imageExpression><![CDATA["C:\\Archivos de programa\\CyberPlaySoftware\\Impresora\\tarjeta3.jpg"]]></imageExpression>
+			</image>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="51" y="38" width="54" height="55" uuid="c15ad72e-a567-41e4-816a-4c1078926488"/>
+				<graphicElement>
+					<pen lineWidth="0.75" lineColor="#66FFFF"/>
+				</graphicElement>
+				<imageExpression><![CDATA[$F{rufo2}]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="221" y="39" width="60" height="50" uuid="21ca8847-02af-4dd5-b495-d3ca6258e29f"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#66FFFF"/>
+				</graphicElement>
+			</rectangle>
+			<image hAlign="Center" vAlign="Top" isUsingCache="true">
+				<reportElement isPrintRepeatedValues="false" mode="Opaque" x="228" y="43" width="45" height="43" backcolor="#FFFFFF" uuid="f7782738-7658-4683-8eb1-510eac405f8a"/>
+				<graphicElement>
+					<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+				<imageExpression><![CDATA[$F{rufo3}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="115" y="50" width="96" height="14" forecolor="#000000" uuid="4eb12b1c-ffa0-4436-9d4e-96c55c0025e4"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="115" y="39" width="49" height="11" forecolor="#000000" uuid="69cf5875-ce30-4679-80e2-d3e66acfda0a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Calibri" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="115" y="64" width="49" height="11" forecolor="#000000" uuid="c313c302-0745-43be-8007-76384bdf0db0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None">
+					<font fontName="Calibri" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Apellido:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="115" y="75" width="96" height="15" forecolor="#000000" uuid="3b380b8a-fb56-493b-8270-e3a9dda277a2"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{apellido1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="246" y="90" width="35" height="11" forecolor="#FFFFFF" backcolor="#000000" uuid="5408b64a-646f-4521-b0d0-62e9606fd1ee"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" rotation="None">
+					<font fontName="Calibri" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechac}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="228" y="91" width="17" height="10" forecolor="#FFFFFF" uuid="a4bc510f-c3e5-4a16-a73e-86155cd923fc"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="8"/>
+				</textElement>
+				<text><![CDATA[Emi:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="246" y="100" width="35" height="11" forecolor="#FFFFFF" uuid="eac67392-a377-4ffc-a2ed-6fd51ef91692"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" rotation="None">
+					<font fontName="Calibri" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechae}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="229" y="100" width="17" height="10" forecolor="#FFFFFF" uuid="1ed26132-676b-4ff7-806c-48afa0e1e3e4"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8"/>
+				</textElement>
+				<text><![CDATA[Exp:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="64" y="101" width="30" height="9" forecolor="#FFFFFF" uuid="9f917df8-fc79-42e6-9f82-e3cc6a24b5d5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{id1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="64" y="94" width="30" height="9" forecolor="#FFFFFF" uuid="2a7a27a5-2e51-4c56-af11-45dafdda9033"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6"/>
+				</textElement>
+				<text><![CDATA[CODIGO]]></text>
+			</staticText>
+			<image>
+				<reportElement x="288" y="0" width="247" height="145" uuid="1fa16904-b2bb-40e9-a921-4f0ac0f3003d"/>
+				<imageExpression><![CDATA["C:\\Archivos de programa\\CyberPlaySoftware\\Impresora\\tarjeta4.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
